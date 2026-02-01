@@ -1,9 +1,5 @@
-Understood. Below is a clean, professional README text with no emojis, proper spacing, and important lines highlighted using bold formatting only.
-You can copy-paste this entire block directly into README.md.
 
-⸻
-
-Hospital Management System – SQL-Centric Database Project
+**Hospital Management System – SQL-Centric Database Project**
 
 A comprehensive Hospital Information System focused on advanced MySQL database design, automation, and analytical reporting.
 This project emphasizes relational modeling, normalization, stored procedures, triggers, and SQL views, with a minimal API-based application used to automate structured data entry into MySQL.
