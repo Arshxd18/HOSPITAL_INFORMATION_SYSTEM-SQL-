@@ -1,0 +1,7 @@
+ward_name,total_beds,occupied_beds
+ICU,3,1
+"General Ward",3,1
+"Private Ward",3,1
+"Pediatric Ward",3,0
+"Emergency Ward",3,1
+"Oncology Ward",3,1

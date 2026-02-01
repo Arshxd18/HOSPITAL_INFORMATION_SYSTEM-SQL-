@@ -1,0 +1,13 @@
+gender,blood_group,total_patients,avg_age
+Male,O+,2,35.0000
+Female,A+,2,26.0000
+Male,B+,2,37.5000
+Female,O-,1,33.0000
+Male,AB+,2,44.5000
+Female,A-,2,28.0000
+Male,B-,1,36.0000
+Female,O+,2,30.0000
+Male,A+,2,38.0000
+Female,B+,2,31.5000
+Female,AB-,1,28.0000
+Male,O-,1,50.0000
