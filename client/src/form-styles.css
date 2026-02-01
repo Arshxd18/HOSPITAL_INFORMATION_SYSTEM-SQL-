@@ -1,0 +1,259 @@
+/* RESET & CORE LAYOUT */
+.form-page-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 160px;
+    /* Increased to ensure header is fully visible below navbar */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #050505;
+    /* Solid background to ensure no bleed through if needed */
+}
+
+/* FORM CARD - The main container */
+.form-card {
+    width: 100%;
+    max-width: 1000px;
+    /* Slightly narrower for better focus */
+    background: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 28px;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+/* HEADERS */
+.form-header {
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(34, 211, 238, 0.2);
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.5px;
+}
+
+.form-header p {
+    color: #a0a0a0;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* FORM GRID SYSTEM */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.75rem;
+}
+
+/* SPANS */
+.span-full {
+    grid-column: span 12;
+}
+
+.span-6 {
+    grid-column: span 6;
+}
+
+.span-4 {
+    grid-column: span 4;
+}
+
+.span-3 {
+    grid-column: span 3;
+}
+
+/* FORM ELEMENTS */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.form-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e5e5e5;
+    margin-left: 2px;
+    text-transform: capitalize;
+}
+
+.form-input {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1.5px solid rgba(255, 255, 255, 0.12);
+    color: #fff;
+    padding: 0.95rem 1.1rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.form-input:hover {
+    border-color: rgba(34, 211, 238, 0.3);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #22d3ee;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.08), inset 0 0 0 1px rgba(34, 211, 238, 0.1);
+}
+
+textarea.form-input {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+select.form-input {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2322d3ee' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    background-size: 1.3em;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+/* SUB-SECTIONS */
+.form-section-title {
+    font-size: 1.2rem;
+    color: #22d3ee;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    grid-column: span 12;
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(34, 211, 238, 0.15);
+    letter-spacing: 0.3px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .span-4 {
+        grid-column: span 6;
+    }
+
+    .span-3 {
+        grid-column: span 6;
+    }
+
+    .form-page-container {
+        padding-top: 130px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .form-card {
+        padding: 2.5rem;
+        gap: 1.75rem;
+    }
+
+    .form-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-page-container {
+        padding-top: 110px;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .form-card {
+        padding: 1.75rem 1.5rem;
+        border-radius: 20px;
+        gap: 1.5rem;
+    }
+
+    .form-grid {
+        gap: 1.5rem;
+    }
+
+    .span-6,
+    .span-4,
+    .span-3 {
+        grid-column: span 12;
+    }
+
+    .form-header {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .form-header h1 {
+        font-size: 1.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .form-header p {
+        font-size: 0.9rem;
+    }
+
+    .form-section-title {
+        font-size: 1.05rem;
+        margin-top: 1.25rem;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .form-input {
+        padding: 0.85rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    textarea.form-input {
+        min-height: 110px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-page-container {
+        padding-top: 100px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .form-card {
+        padding: 1.25rem 1rem;
+    }
+
+    .form-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .form-input {
+        padding: 0.75rem 0.9rem;
+        font-size: 0.85rem;
+    }
+
+    textarea.form-input {
+        min-height: 100px;
+    }
+}
