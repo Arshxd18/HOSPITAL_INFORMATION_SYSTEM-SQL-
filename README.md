@@ -1,7 +1,7 @@
 
 **Hospital Management System – SQL**
 
-A comprehensive Hospital Information System focused on advanced MySQL database design, automation, and analytical reporting.
+A Comprehensive Hospital Information System focused on advanced MySQL database design, automation, and analytical reporting.
 This project emphasizes relational modeling, normalization, stored procedures, triggers, and SQL views, with a minimal API-based application used to automate structured data entry into MySQL.
 
 ⸻
